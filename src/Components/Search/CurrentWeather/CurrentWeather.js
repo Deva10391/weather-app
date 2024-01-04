@@ -7,7 +7,15 @@ const CurrentWeather = ({ data }) => {
     }
 
     return (
-        <div className='weather'>
+        <div className='weather' style={{
+            width: '300px',
+            borderRadius: '6px',
+            boxShadow: '10px -2px 20px 2px rgb(0, 0, 0, 0.3)',
+            color: '#fff',
+            backgroundColor: '#333',
+            margin: '20px auto 0 auto',
+            padding: '0 20px 20px 20px',
+        }}>
             <div className='top'>
                 <div>
                     <p className='city'>{data.city}</p>
@@ -43,7 +51,7 @@ const CurrentWeather = ({ data }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
