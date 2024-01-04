@@ -18,6 +18,7 @@ const CurrentWeather = ({ data }) => {
         }}>
             <div className='top' style={{
                 display: 'flex',
+                flexDirection: 'row',
                 justifyContent: 'space-between',
                 alignItems: 'center'
             }}>
@@ -32,6 +33,7 @@ const CurrentWeather = ({ data }) => {
             </div>
             <div className='bottom' style={{
                 display: 'flex',
+                flexDirection: 'row',
                 justifyContent: 'space-between',
                 alignItems: 'center'
             }}>
