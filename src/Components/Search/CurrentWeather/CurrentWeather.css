@@ -1,7 +1,6 @@
 .top,
 .bottom {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -36,7 +35,6 @@
 .details {
     width: 100%;
     padding-left: 20px;
-    padding-right: 20px;
 }
 
 .parameter-row{
