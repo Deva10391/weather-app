@@ -16,7 +16,11 @@ const CurrentWeather = ({ data }) => {
             margin: '20px auto 0 auto',
             padding: '0 20px 20px 20px',
         }}>
-            <div className='top'>
+            <div className='top' style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center'
+            }}>
                 <div>
                     <p className='city'>{data.city}</p>
                     <p className='weather-description'>{data.weather[0].description}</p>
@@ -26,7 +30,11 @@ const CurrentWeather = ({ data }) => {
                     className='weather-icon'
                     alt='weather' />
             </div>
-            <div className='bottom'>
+            <div className='bottom' style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center'
+            }}>
                 <p className='temperature'>{Math.round(data.main.temp)}°C</p>
                 <div className='details'>
                     <div style={{ width: '100%' }}></div>
