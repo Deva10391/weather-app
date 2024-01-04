@@ -21,10 +21,12 @@ const CurrentWeather = ({ data }) => {
                     <p className='city'>{data.city}</p>
                     <p className='weather-description'>{data.weather[0].description}</p>
                 </div>
-                <img
-                    src={`icons/${data.weather[0].icon}.png`}
-                    className='weather-icon'
-                    alt='weather' />
+                <div>
+                    <img
+                        src={`icons/${data.weather[0].icon}.png`}
+                        className='weather-icon'
+                        alt='weather' />
+                </div>
             </div>
             <div className='bottom'>
                 <p className='temperature'>{Math.round(data.main.temp)}°C</p>
