@@ -3,7 +3,7 @@ import './App.css';
 import CurrentWeather from './Components/Search/CurrentWeather/CurrentWeather';
 import Search from './Components/Search/Search';
 import { WEATHER_API_KEY, WEATHER_API_URL } from './api';
-import Forecast from './Components/Forcast/Forecast';
+import Forecast from './Components/Forecast/Forecast';
 
 function App() {
 
