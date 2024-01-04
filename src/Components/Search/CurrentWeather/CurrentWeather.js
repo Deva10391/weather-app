@@ -2,7 +2,7 @@ import './CurrentWeather.css';
 
 const CurrentWeather = ({ data }) => {
 
-    if(!data){
+    if (!data) {
         return null;
     }
 
@@ -21,6 +21,7 @@ const CurrentWeather = ({ data }) => {
             <div className='bottom'>
                 <p className='temperature'>{Math.round(data.main.temp)}°C</p>
                 <div className='details'>
+                    <div style={{ width: '100%' }}></div>
                     <div className='parameter-row'>
                         <span className='parameter-label'>Details: </span>
                     </div>
