@@ -14,6 +14,11 @@ const Search = ({ onSearchChange }) => {
         try {
             const response = await fetch(`${GEO_API_URL}/cities?minPopulation=1000000&namePrefix=${inputValue}`, geoApiOptions);
             const result = await response.json();
+
+            if (!result.data) {
+                return { options: [] };
+            }
+
             const options = result.data.map(city => ({
                 value: `${city.latitude}, ${city.longitude}`,
                 label: `${city.name}, ${city.countryCode}`,
@@ -22,6 +27,7 @@ const Search = ({ onSearchChange }) => {
             return { options };
         } catch (err) {
             console.error(err);
+            return { options: [] };
         }
     }
 

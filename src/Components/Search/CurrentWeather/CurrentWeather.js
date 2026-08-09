@@ -5,6 +5,7 @@ const CurrentWeather = ({ data }) => {
     if (!data) {
         return null;
     }
+    console.log(data);
 
     return (
         <div className='weather' style={{
@@ -23,7 +24,7 @@ const CurrentWeather = ({ data }) => {
                 </div>
                 <div>
                     <img
-                        src={`icons/${data.weather[0].icon}.png`}
+                        src={`${process.env.PUBLIC_URL}/icons/${data.weather[0].icon}.png`}
                         className='weather-icon'
                         alt='weather' />
                 </div>
