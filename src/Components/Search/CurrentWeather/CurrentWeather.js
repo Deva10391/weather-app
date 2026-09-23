@@ -5,7 +5,6 @@ const CurrentWeather = ({ data }) => {
     if (!data) {
         return null;
     }
-    console.log(data);
 
     return (
         <div className='weather' style={{

@@ -10,8 +10,6 @@ function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forcastWeather, setForcastWeather] = useState(null);
 
-  console.log(currentWeather);
-
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(', ');
     const currentWeatherFetch = fetch(`${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`);
