@@ -3,4 +3,4 @@ dist/
 node_modules/
 config/
 *api.js
-.env
+.envsemantic-search-engine/
